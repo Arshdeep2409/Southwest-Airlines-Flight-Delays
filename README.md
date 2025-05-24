@@ -1,49 +1,87 @@
-# Southwest-Airlines-Flight-Delays
-This project will showcase the Southwest Airlines flight delays based on the restrictions and reasons of delays at different airport locations.
+✈️ Southwest Airlines Flight Delay Analysis
+📌 Project Title
+Southwest Airlines Flight Delay Analysis (Interactive Dashboard + Insights)
 
-Dataset Summary
+📄 Project Description
+This project aims to analyze flight delay patterns for Southwest Airlines using real-world data. The focus is on understanding the reasons behind delays, identifying the most affected airports, and visualizing key metrics to derive actionable insights. An interactive dashboard was created to explore delays by categories such as weather, security, carrier issues, and more.
 
-The dataset consists of detailed flight delay data for Southwest Airlines across various airports in the U.S., including information about types of delays, cancellations, and diverted flights.
+🧰 Tools Used
+Microsoft Excel – Data cleaning & preprocessing
 
-Overall Statistics
+Power BI – Interactive dashboard creation and visualization
 
-Total Arriving Flights Analyzed: 684,324
+PostgreSQL - Queries to get the required data for Analysis 
 
-Flights Delayed More Than 15 Minutes: 107,978
+📊 Data Overview
+The dataset contains detailed information about flight arrival delays, cancellation events, and various types of delay reasons for Southwest Airlines across multiple U.S. airports. Key columns include:
 
-Cancelled Flights: 7,021
+Airport Code
 
-Diverted Arrivals: 1,186
+Flights Delay > 15 Min
 
+Cancelled Arrivals
 
-Delay Cause Breakdown
+Diverted Arrivals
 
-Carrier Delays: 32,821 events
+Delay categories:
 
-Weather Delays: 1,408 events
+NAS (National Aviation System)
 
-NAS (National Aviation System) Delays: 23,202 events
+Carrier
 
-Security Delays: 389 events
+Security
 
-Late Aircraft Delays: 50,159 events
+Weather
 
+Late Aircraft
 
-Insight: Late aircraft delays and carrier-related issues are the most common reasons for delays.
+The dataset represents flight delay data aggregated across airports, months, and years.
 
-Top 5 Airports with the Most Delays
+📈 Key Findings
+Total Delays:
 
-Airport Code	Flights Delayed > 15 min
+Total NAS Delays: 23.2K
 
-LAS (Las Vegas)	6,885
-DEN (Denver)	6,811
-DAL (Dallas Love Field)	5,675
-BWI (Baltimore/Washington)	5,177
-MDW (Chicago Midway)	4,868
+Total Weather Delays: 1.41K
 
+Security Delay Events: 388.90
 
-Insight: These airports may be operationally challenging for Southwest, possibly due to traffic volume or weather conditions.
+Total Flight Arrival Delays: 6M (Cumulative)
 
+Delay Reason Distribution:
 
-Project Accomplished By - Arshdeep Singh
-Linkedin Profile - linkedin.com/in/arshdeep-singh-900540b0-data-analyst
+Late Aircraft Delays are the most frequent (≈46.45% of total delays).
+
+Carrier Delays make up ≈30.4%.
+
+NAS Delays are ≈21.49%.
+
+Security and Weather Delays are relatively rare (less than 2% combined).
+
+Airport-Specific Observations:
+
+DEN (Denver), LAS (Las Vegas), BWI (Baltimore) are among the top 3 in total arriving flights.
+
+MCO (Orlando) has the highest number of flights delayed over 15 minutes (2392).
+
+SFO (San Francisco) has a very low number of delays and only 1 cancelled arrival.
+
+STL (St. Louis) has the highest number of cancelled arrivals (300).
+
+TPA (Tampa) has the highest diverted arrivals (27).
+
+MCO and LAX lead in carrier-related delays.
+
+TPA and ATL show noticeable weather delay patterns.
+
+📊 Visual Insights (From Dashboard)
+A pie chart shows delay breakdowns, highlighting that Late Aircraft Delays dominate delay reasons, followed by Carrier and NAS delays.
+
+A bar chart visualizes the total arriving flights by airport, clearly indicating DEN and LAS as major hubs.
+
+Interactive slicers (Airport, Year, Month) allow dynamic filtering of data for focused analysis.
+
+The data table shows delays >15 min, cancellations, and diverted arrivals by airport, helping quickly identify outlier airports in terms of operational inefficiencies.
+
+🧾 Conclusion
+This analysis reveals that the majority of delays are due to Late Aircraft and Carrier issues, emphasizing internal operational challenges over external ones like weather or security. Airports such as MCO, STL, and TPA are particularly impacted and may benefit from targeted efficiency improvements. The interactive Power BI dashboard enables ongoing exploration of patterns across time and airport locations, making it a valuable monitoring tool for airline operations and performance tracking.
